@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <form class="js-form form">
+            <h1 class="form__header">Przelicznik walut</h1>
+            <p>
+                <label>
+                    
+                    <span class="form__label">PLN*:</span>
+                    
+                    <input class="js-amount form__field" placeholder="Wpisz wartość w zł" value="PLN"
+                        type="number" required step="0.01">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="form__label">
+                        Waluta:
+                    </span>
+                    <select class="js-currency form__field">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">Dolar amerykański</option>
+                        <option value="GBP">Funt brytyjski</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <button class="form__button">Przelicz</button>
+            </p>
+
+            <footer class="form__info">Kursy pochodzą ze strony internetowykantor.pl</footer>
+        </form>
+        <p><span class="js-result"></span></p>
+
+    </div>
+</body>
+
+</html>
