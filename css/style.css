@@ -7,8 +7,21 @@ html {
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 auto;
+   flex-basis: 700px;
+   margin: 20px;
+   padding: 40px;
+   background: white;
+   border-radius: 30px;
+   box-shadow: 0 0 40px black;
+}
+
+body {
     font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
 }
